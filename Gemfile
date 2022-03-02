@@ -53,6 +53,9 @@ group :test do
 end
 
 gem "haml-rails", "~> 2.0"
+gem 'bootstrap', '~> 4.6.1'
+gem 'jquery-rails'
+gem 'font-awesome-sass', '~> 5.12.0'
 gem 'simple_form'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
