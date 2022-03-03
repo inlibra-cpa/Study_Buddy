@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap";
+@import "bootstrap 4.6.1";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "./actiontext.scss";
