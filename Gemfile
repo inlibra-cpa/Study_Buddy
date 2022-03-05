@@ -64,7 +64,7 @@ gem 'faker'
 gem 'devise'
 gem 'friendly_id', '~> 5.4.0'
 gem 'ransack'
-gem 'exception_notification', '~> 4.2', '>= 4.2.2'
+gem 'public_activity'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
