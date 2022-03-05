@@ -13,10 +13,10 @@
  *= require_tree .
  *= require_self
  */
-@import "node_modules/bootstrap 4.6.1";
-@import "node_modules/font-awesome-sprockets";
-@import "node_modules/font-awesome";
-@import "node_modules/./actiontext.scss";
+@import "bootstrap 4.6.1";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "./actiontext.scss";
 
 .form-control.is-invalid{ background-image: none; }
 .form-control.is-valid{ background-image: none; }
