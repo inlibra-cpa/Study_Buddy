@@ -67,6 +67,7 @@ gem 'ransack'
 gem 'public_activity'
 gem "rolify"
 gem "pundit"
+gem 'exception_notification'
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
