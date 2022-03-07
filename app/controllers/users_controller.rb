@@ -5,7 +5,9 @@ class UsersController < ApplicationController
       #@users = User.all.order(created_at: :desc)
 
       @q = User.ransack(params[:q])
-      @users = @q.result(distinct: true)
+      #@users = @q.result(distinct: true)
+      @pagy, @users = pagy(@q.result(distinct: true))
+
       authorize @users
     end
 
@@ -13,7 +15,7 @@ class UsersController < ApplicationController
     end
 
     def edit
-      authorize @user
+      authorize @user 
     end
   
     def update
@@ -34,6 +36,4 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit({role_ids: []})
     end
-  
-
 end 
