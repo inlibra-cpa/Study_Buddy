@@ -1,12 +1,12 @@
 .card
   .card-header
-    .fa.fa-book
+    .fa.fa-graduate-cap 
     = link_to course.title, course_path(course)
   .card-body
     %small= simple_format(course.short_description)
   .card-footer
     .text-center
-      = number_to_currency(course.price)
+      = enrollment_button(course)
     .card-footer
       .fa.fa-tasks
       = course.lessons.count

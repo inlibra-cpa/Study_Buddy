@@ -19,6 +19,13 @@ class User < ApplicationRecord
 
   extend FriendlyId
   friendly_id :email, use: :slugged
+  def email_or_id
+    if self.email.present?
+      self.email
+    else
+      self.id
+    end
+  end
 
   after_create :assign_default_role
 
@@ -37,6 +44,10 @@ class User < ApplicationRecord
 
   def online?
     updated_at > 2.minutes.ago
+  end
+
+  def buy_course(course)
+    self.enrollments.create(course: course, price: course.price)
   end
 
   private
