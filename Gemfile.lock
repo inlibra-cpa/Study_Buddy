@@ -256,6 +256,8 @@ GEM
       rubyzip (>= 1.2.2)
     semantic_range (3.0.0)
     sexp_processor (4.16.0)
+    shoulda-matchers (5.1.0)
+      activesupport (>= 5.2.0)
     simple_form (5.1.0)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
@@ -308,6 +310,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   devise
   exception_notification
+  factory_bot
   factory_bot_rails
   faker
   font-awesome-sass (~> 5.12.0)
@@ -325,10 +328,12 @@ DEPENDENCIES
   rails (~> 6.1.4, >= 6.1.4.6)
   rails-controller-testing
   ransack
+  rexml
   rolify
   rspec-rails
   sass-rails (>= 6)
   selenium-webdriver
+  shoulda-matchers
   simple_form
   spring
   turbolinks (~> 5)

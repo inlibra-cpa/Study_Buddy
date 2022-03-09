@@ -1,7 +1,6 @@
 body {
-  background-color: #fff;
-  color: #333;
-  margin: 33px; }
+  background-image: url('background.jpg');
+}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -17,7 +16,7 @@ a {
   color: #000; }
 
 a:visited {
-  color: #666; }
+  color: rgb(41, 25, 51); }
 
 a:hover {
   color: #fff;
@@ -62,4 +61,33 @@ div.actions {
   list-style: square; }
 
 label {
-  display: block; }
+  display: block;
+  color:rgb(68, 13, 95);
+}
+
+  .jumbotron{
+    background-image: url('study.png');
+    background-size: cover;
+    opacity: 0.5;
+  }
+  
+  h2{
+    color:rgb(232, 203, 248);
+  }
+
+  h3{
+    color:rgb(43, 8, 99);
+  }
+
+  .string-required{
+    color:rgb(67, 66, 70);
+  }
+  .course-search{
+    background-color:rgb(224, 222, 226);
+  }
+
+  .table-bordered{
+    color:rgb(237, 218, 247);
+  }
+
+  

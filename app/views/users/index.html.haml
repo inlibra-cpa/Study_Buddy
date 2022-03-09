@@ -58,7 +58,7 @@
             .badge.badge-info
               = role.name
           - if policy(user).edit?
-            = link_to 'Edit roles', edit_user_path(user), class: 'btn btn-sm btn-warning'
+            = link_to 'Edit roles', edit_user_path(user), class: 'btn btn-warning btn-sm '
 != pagy_bootstrap_nav(@pagy) 
 
 %br 

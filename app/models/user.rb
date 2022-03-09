@@ -19,6 +19,7 @@ class User < ApplicationRecord
 
   extend FriendlyId
   friendly_id :email, use: :slugged
+  
   def email_or_id
     if self.email.present?
       self.email
