@@ -7,7 +7,6 @@
 #user.skip_confirmation!
 #user.save!
 
-PublicActivity.enabled = false
 30.times do
     Course.create!([{
       title: Faker::Educator.course_name,
@@ -19,4 +18,3 @@ PublicActivity.enabled = false
       price: Faker::Number.between(from: 100, to: 20000)
     }])
 end 
-PublicActivity.enabled = true
