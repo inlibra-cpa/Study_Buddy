@@ -6,7 +6,7 @@ ruby '3.0.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.6'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+# gem 'pg', '~> 1.1'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -63,8 +63,12 @@ group :test do
   gem 'shoulda-matchers'
 end
 
+group :production do   
+  gem 'pg' 
+  gem 'rails_12factor'
+end
+
 gem "haml-rails", "~> 2.0"
-gem 'bootstrap', '~> 4.6.1'
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
 gem 'simple_form'
