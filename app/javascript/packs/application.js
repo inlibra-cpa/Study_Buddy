@@ -16,7 +16,6 @@ ActiveStorage.start()
 
 import 'bootstrap/dist/js/bootstrap'
 import 'bootstrap/dist/css/bootstrap'
-require("bootstrap");
 require("stylesheets/application.scss")
 require("trix")
 require("@rails/actiontext")
