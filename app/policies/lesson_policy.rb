@@ -18,7 +18,7 @@ class LessonPolicy < ApplicationPolicy
     end
   
     def new?
-      #@user.has_role?(:teacher)
+      @user.has_role?(:teacher)
     end
   
     def create?

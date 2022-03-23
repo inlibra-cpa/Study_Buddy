@@ -11,7 +11,7 @@ class UsersController < ApplicationController
       authorize @users
     end
 
-    def show
+    def show 
     end
 
     def edit
