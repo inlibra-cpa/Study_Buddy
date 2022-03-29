@@ -1,4 +1,7 @@
-/*
+/*@import 'bootstrap';
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "./actiontext.scss";
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
  *
@@ -13,10 +16,7 @@
  *= require_tree .
  *= require_self
  */
-@import 'bootstrap';
-@import "font-awesome-sprockets";
-@import "font-awesome";
-@import "./actiontext.scss";
+
 
 
 .form-control.is-invalid{ background-image: none; }
